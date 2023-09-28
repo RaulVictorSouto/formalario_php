@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Solicitação de Bolsa Auxílio-Tecnologia</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1>Solicitação de Bolsa Auxílio - Tecnologia</h1>
+    <form action="processa_formulario.php" method="post">
+        <div class="question">
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" id="cpf" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}">
+            <br>
+        </div>
+        <div class="linha"></div>
+
+        <div class="question">  
+            <label for="nome">Nome Completo:</label>
+            <input type="text" name="nome" id="nome" required pattern="[A-Za-z\s]+">
+            <br>
+        </div>
+        <div class="linha"></div>
+
+        <div class="question">
+            <label for="ano_nascimento">Ano de Nascimento:</label>
+            <input type="text" name="ano_nascimento" id="ano_nascimento" required pattern="\d{4}">
+            <br>
+        </div>
+        <div class="linha"></div>
+
+        <div class="question">
+            <label for="endereco">Endereço:</label><br>
+            <label for="logradouro">Logradouro:</label>
+            <input type="text" name="logradouro" id="logradouro" required>
+            <br>
+            <label for="numero">Número:</label>
+            <input type="text" name="numero" id="numero" required>
+            <br>
+            <label for="bairro">Bairro:</label>
+            <input type="text" name="bairro" id="bairro" required>
+            <br>
+            <label for="cidade">Cidade:</label>
+            <input type="text" name="cidade" id="cidade" required>
+            <br>
+            <label for="estado">Estado:</label>
+            <input type="text" name="estado" id="estado" required>
+            <br>
+            <label for="cep">CEP:</label>
+            <input type="text" name="cep" id="cep" required pattern="\d{5}-\d{3}">
+            <br>
+        </div>
+        <div class="linha"></div>
+
+        <div class="question">
+            <label for="telefone">Telefone de Contato:</label>
+            <input type="text" name="telefone" id="telefone" required>
+            <br>
+        </div>
+        <div class="linha"></div>
+
+        <div class="question">
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" required>
+            <br>
+        </div>
+        <div class="linha"></div>
+
+        <div class="question">
+            <label>Possui computador?</label>
+            <input type="radio" name="possui_computador" value="Sim">Sim
+            <input type="radio" name="possui_computador" value="Não">Não
+            <br>
+        </div>
+        <div class="linha"></div>
+
+        <div class="question">
+            <label>Possui celular?</label>
+            <input type="radio" name="possui_celular" value="Sim">Sim
+            <input type="radio" name="possui_celular" value="Não">Não
+            <br>
+        </div>
+        <div class="linha"></div>
+
+        <div class="question">
+            <label>Possui notebook?</label>
+            <input type="radio" name="possui_notebook" value="Sim">Sim
+            <input type="radio" name="possui_notebook" value="Não">Não
+            <br>
+        </div>
+        <div class="linha"></div>
+
+        <div class="question">
+            <label for="renda">Salário ou Renda Total:</label>
+            <input type="text" name="renda" id="renda" required pattern="\d+">
+            <br>
+        </div>
+        <div class="linha"></div>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
